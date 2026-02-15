@@ -7,6 +7,7 @@ const LicenseSchema = new mongoose.Schema({
     required: true,
     unique: true, // No two people can have the same key
   },
+  email: { type: String },
   devices: {
     type: [String], // An array of Device IDs (e.g. ["device_123", "device_456"])
     default: [],
